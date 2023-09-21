@@ -1,5 +1,7 @@
 # li₃ fullstack distribution
 
+##Installation Process
+
 ## Synopsis
 
 The li₃ fullstack distribution is an application system that includes the
