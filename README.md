@@ -26,8 +26,9 @@
 
 1. We have issue while reading the flash library messages. We have writen a sample Flash::write() and Flash::read() code inside PagesController to showcase the issue.
 
-We are getting below mentioned error
-Warning: Array to string conversion in C:\xampp\htdocs\FlashApp\app\extensions\adapter\storage\session\Model.php on line 258
+   We are getting below mentioned error
+
+   Warning: Array to string conversion in C:\xampp\htdocs\FlashApp\app\extensions\adapter\storage\session\Model.php on line 258
 
 2. In config\bootstrap\session.php file we have kept adapter setting as Model, which is the file coming from app\extensions\adapter\session\Model.php
 
