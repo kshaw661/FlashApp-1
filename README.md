@@ -20,7 +20,6 @@
 
 8. Run the project in localhost.
 
-Note: We are using PHP version 8.1
 
 
 ##Issues/Observations
