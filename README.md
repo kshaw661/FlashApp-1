@@ -4,15 +4,15 @@
 
 1. Download the Zip file/github url
 
-2. Place the folder in windows -->htdocs or in linux -->html folder
+2. Place the folder in windows -->htdocs or in linux -->html folder.
 
-3. Download the latest php8 supporting library form below path
+3. Download the latest php8 supporting library form below path.
 
    https://github.com/UnionOfRAD/lithium/tree/v2.0.0
 
 4. Place the lithium library files in root folder inside 'libaries' folder.
 
-5. Please install PHP8.1 version
+5. Please install PHP8.1 version.
 
 6. Install the flash library that is available in the project root folder as flash.zip, Unzip that file and place the flash libary folder inside libraries folder.
 
@@ -20,6 +20,7 @@
 
 8. Run the project in localhost.
 
+Note: We are using PHP version 8.1
 
 
 ##Issues/Observations
