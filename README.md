@@ -2,35 +2,28 @@
 
 ##Installation Process
 
-## Synopsis
+1. Download the Zip file/github url
 
-The li₃ fullstack distribution is an application system that includes the
-overarching directory layout, an example starting application, and a copy of the
-[li₃ framework](https://github.com/UnionOfRAD/lithium).
+2. Place the folder in windows -->htdocs or in linux -->html folder
 
-## Installation / Quickstart
+3. Download the latest php8 supporting library form below path
+   https://github.com/UnionOfRAD/lithium/tree/v2.0.0
 
-Make sure you have [Composer](http://getcomposer.org/doc/00-intro.md) installed, then
-run the following command to create an initial project from this distribution:
+4. Place the lithium library files in root folder inside libaries folder.
 
-```
-composer create-project unionofrad/framework project
-```
+5. Please install PHP8.1 version
 
-Inside the `project` directory start the builtin PHP development webserver.
+6. Install the flash library that is available in the project root folder as flash.zip, Unzip that file and place the flash libary folder inside libraries folder.
 
-```
-php -S 127.0.0.1:8080 -t app/webroot index.php
-```
+7. Setup the database, the database sql export file is kept in Database folder, create a new database with the name as "database".
 
-You should now be able to see the welcome page by visiting [http://127.0.0.1:8080](http://127.0.0.1:8080).
+8. Run the project in localhost.
 
-The manual has more information on [the installation process](http://li3.me/docs/book/manual/1.x/installation/)
-as well as [getting your first project started very quickly](http://li3.me/docs/book/manual/1.x/quickstart).
 
-## Copyright & License
 
-Copyright 2016 Union of RAD. All rights reserved. This library
-is distributed under the terms of the BSD 3-Clause License. The
-full license text can be found in the LICENSE.txt file.
+##Issues/Observations
+
+1. We have issue while reading the flash library messages. We have writen a sample Flash::write() and Flash::read() code to showcase the issue.
+2. In bootstrap Session file we have kept adapater setting as Model which is the file in app\extensions\adapter\session\Model.php
+
 

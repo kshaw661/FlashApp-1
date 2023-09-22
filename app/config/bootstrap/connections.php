@@ -44,7 +44,7 @@ Connections::add('default', array(
 	'host' => 'localhost',
 	'login' => 'root',
 	'password' => '',
-	'database' => 'accounts',
+	'database' => 'database',
 	'encoding' => 'UTF-8',
     // bug in mysql_pdo persistent not work correct see (SHOW FULL PROCESSLIST)
     'persistent' => 0,
