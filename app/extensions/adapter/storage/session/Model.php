@@ -255,8 +255,12 @@ class Model {
             return $this->_data->data();
         }
         $data = $this->_data->{$key};
-        return ($data instanceof Entity) ? $data->data() : (string)$data;
-        
+        //return ($data instanceof Entity) ? $data->data() : (string)$data;
+         if($data === null || $data == ''){
+            return ($data instanceof Entity) ? $data->data() : (string)$data;
+        }else{
+            return ($data instanceof Entity) ? $data->data() : $data;
+        }
     }
 
     /**

@@ -244,6 +244,8 @@ $checks = [
 <hr>
 
 <h3>Current Setup</h3>
+
+<h3><?= $this->flash->output(); ?></h3>
 <?php foreach ($checks as $check): ?>
 	<?php echo $check(); ?>
 <?php endforeach; ?>
