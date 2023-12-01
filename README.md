@@ -24,17 +24,14 @@
 
 ##Issues/Observations
 
-1. We have issue while reading the flash library messages. We have writen a sample Flash::write() and Flash::read() code inside PagesController to showcase the issue.
+1. We are getting issue while rendering the flash library messages into view page. We have writen a sample Flash::output() fuction in views/pages/home.html.php line no 248
 
-   We are getting below mentioned error
+We are getting below 
 
-   Warning: Array to string conversion in C:\xampp\htdocs\FlashApp\app\extensions\adapter\storage\session\Model.php on line 258
+lithium\template\TemplateException (code 500)
+Undefined rendering step 'flash'.
 
-2. In config\bootstrap\session.php file we have kept adapter setting as Model, which is the file coming from app\extensions\adapter\session\Model.php
+Note:
+Previously, we are having issue while reading the flash messages, we have done changes in the adapter  from line no 259 to 262 in below file path, after that we are able to read the flash messages. but unable to render them in view page.
 
-3. We are using the session_set_save_handler function for all the session operations in Model.php file (This is a li3 model adapter file).
-
-4. While trying to read the flash messages, We are getting an issue near _read function (Line no 258). As per the php8 new changes, the return type of the read method is string, so we have later changed return type with typecasting as string.
-You can also please remove the typecasting (string) from the code(Line no 258) and check the actual error.
-
-5. We are expecting the issue is somewhere from internal library files.
+app/extensions/adapter/storage/session/model.php
