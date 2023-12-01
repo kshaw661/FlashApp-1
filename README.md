@@ -24,7 +24,7 @@
 
 ##Issues/Observations
 
-1. We are getting issue while rendering the flash library messages into view page. We have writen a sample Flash::output() fuction in views/pages/home.html.php line no 248
+1. We are trying to render the flash message into a view page, but getting issue while rendering the flash library messages into view page. We have writen a sample Flash::output() fuction in views/pages/home.html.php line no 248
 
 We are getting below 
 
@@ -32,6 +32,6 @@ lithium\template\TemplateException (code 500)
 Undefined rendering step 'flash'.
 
 Note:
-Previously, we are having issue while reading the flash messages, we have done changes in the adapter  from line no 259 to 262 in below file path, after that we are able to read the flash messages. but unable to render them in view page.
+Previously, we are having issue while reading the flash messages, we have done changes in the session adapter file from line no 259 to 262 in below file path, after that we are able to read the flash messages. but unable to render them in view page.
 
 app/extensions/adapter/storage/session/model.php
